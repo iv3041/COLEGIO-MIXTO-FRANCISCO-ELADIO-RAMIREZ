@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link estilos CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Link Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- Fuentes Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> 
+    <!-- Fuente para h2 Main-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Lobster+Two&family=Raleway:ital,wght@1,100&display=swap" rel="stylesheet">
+    <title>Inicio</title>
+</head>
+<body>
+    <header class="navFondo">
+    <!-- logo -->
+	    <div class="divLogoFer">
+            <img src="img/logofer.png" alt="Logo FER" id="logoFER">
+        </div>
+		<!-- fin logo -->
+
+        <!-- Titulo página-->
+        <div>
+            <h2>Colegio Mixto</h2>
+            <h1>Francisco ELadio Ramírez</h1>
+        </div>
+        <nav>
+            <ul class="menuMain">
+                <li><a href="">Inicio</a></li>
+                <li><a href="pages/somosfer.html">Somos FER</a></li>
+                <li><a href="pages/horizontefer.html">Horizonte Institucional</a></li>
+                <li><a href="pages/calidad.html">Calidad</a></li>
+                <li><a href="pages/culturafer.html">Cultura FER</a></li>
+                <li><a href="pages/cdifer.html">CDI FER</a></li>
+                <li><a href="pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Contenido del cuerpo de la página-->
+    <main>
+        <!--Boostrap Corrusel-->
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/Niños-felices.jpg" class="d-block w-90" alt="niños felices">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/niños-felices2.jpg" class="d-block w-90" alt="niños felices">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/felices.jpg" class="d-block w-90" alt="niños felices">
+              </div>
+            </div>
+          </div>
+        <!--Sesión bienvenida-->
+        <div>
+            <h2 id="familiaFer">Somos la Familia F.E.R.</h2>
+            <h3 class="wellcome">Bienvenidos</h3>
+        </div>
+        <section class="main">
+            <img class="wcfer" src="./img/FER_ENTER.jpg" alt="familia FER">
+            <p class="p-wcfer"> El Colegio Mixto Francisco Eladio Ramírez Institución de servicio educativo, caracterizada 100% por brindar educación de calidad con el único objetivo de formar estudiantes competentes e integros para la sociedad. Somos una entidad de carácter privado, brindamos educación Técnico Industrial y Comercial desde parvúlos hasta undécimo, contamos con un excelente cuerpo de docentes, aulas amplias, recursos de alta tecnología, programas de inclusión social, egresados con excelentes alternativas y oportunidades para continuar estudios de educación superior y acceder al mundo laboral.</p>
+            <div>
+                <h4 class="b-cal">Calendario</h4>
+            </div>
+            <div>
+                <h4 class="b-admi">Admisiones</h4>
+            </div>
+            <aside>
+                <div><h4 class="social">Social</h4></div>
+                <div>
+                <div id="ytplayer"></div>
+                    <script>
+                        // Load the IFrame Player API code asynchronously.
+                        var tag = document.createElement('script');
+                        tag.src = "https://www.youtube.com/player_api";
+                        var firstScriptTag = document.getElementsByTagName('script')[0];
+                        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+                      
+                        // Replace the 'ytplayer' element with an <iframe> and
+                        // YouTube player after the API code downloads.
+                        var player;
+                        function onYouTubePlayerAPIReady() {
+                          player = new YT.Player('ytplayer', {
+                            height: 'auto',
+                            width: 'auto',
+                            videoId: 'A9B_uPuV-cI'
+                          });
+                        }
+                      </script>
+                </div>
+                <a href="https://www.youtube.com/channel/UCWrKQFo8kRdIqyF3fT1DJbQ">Únete a nuestro canal de YouTube</a>
+                <div class="news">
+                    <h3 class="info">Informáte</h3>
+                    <nav class="menu-aside">
+                        <ul>
+                            <li><a href="https://colombiaaprende.edu.co/contenidos/coleccion/guia-steam-genero">STEAM</a></li>
+                            <li><a href="https://www.cali.gov.co/educacion/">SEM Cali</a></li>
+                            <li><a href="https://www.mineducacion.gov.co/portal/">Ministerio de Educación</a></li>
+                            <li><a href="http://oferta.senasofiaplus.edu.co/sofia-oferta/">SENA</a></li>
+                            <li><a href="https://www.mintic.gov.co/portal/inicio/">TICs en Colombia</a></li>
+                            <li><a href="https://feriabellezaysalud.com/">Salud y belleza</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                </aside>
+                <div class="informate" >
+                    <img id="img-info" src="./img/Informate-1024x603.png" alt="">
+                </div>
+        </section>
+    </main>
+    <!--Eventos-->
+    <section>
+        <div>
+            <h3 class="t-eventos">Un mundo de oportunidades espera por ti</h3>
+        </div>
+        <div class="eventos">              
+            <div>
+                <img src="./img/IMG_4407.jpg" alt="">
+                <p>La sala de bilinguismo que nos permite desarrollar programas de formación en idioma extranjero (ingles) a los alumnos, facilitando su aprendizaje mediante el uso de software, grabaciones de cassete y la interacción de dialogo alumno - docente con lecciones practicas.</p>
+            </div>
+            <div>
+                <img src="./img/IMG_4414.jpg" alt="">
+                <p>El diseño de interiores para espacios educativos, bien sean educación superior, básica, bibliotecas o aula maker, deberá propiciar dinamismo. En otras palabras, los espacios deben garantizar experiencias memorables de aprendizaje. De igual manera, deberán cumplir con los protocolos de bioseguridad actuales.</p>
+            </div>
+            <div>
+                <img src="./img/IMG_6958.jpg" alt="">
+                <p>La clase de educación física ha formado parte de la educación desde hace muchos años y esta ha estado sujeta a distintos cambios a lo largo de este periodo. Esto, con el objetivo de añadirse debidamente al Sistema Educativo.</p>
+            </div>
+            <div>
+                <img src="./img/IMG_4385.jpg" alt="">
+                <p>La educación STEAM es una forma de aproximarse al aprendizaje utilizando la Ciencia, la Tecnología, la Ingeniería, las Artes y las Matemáticas como pilares para guiar a los estudiantes a que desarrollen el pensamiento crítico, el diálogo y la investigación.</p>
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer>
+        <div class="menufooter">
+            <nav id="menufooter">
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Convenios</a></li>
+                    <li><a href="">Política FER</a></li>
+                    <li><a href="">Docs</a></li>
+                    <li><a href="">Calidad</a></li>
+                    <li><a href="">Registro</a></li>
+                </ul>
+            </nav>
+        </div>    
+        <div class="footer">
+            <p>Carrera 26C1 # 76 - 35 Barrio: Alirio Mora Beltrán</p>
+            <p>Teléfono: +57 (2) 422 53 28</p>          
+            <p>Email: colegio-fer@hotmail.com</p>
+            <p>Copyright © Todos los Derechos Reservados Colegio Mixto Francisco Eladio Ramírez 2022</p> 
+            <p>Design by JIMP Ingeniería SAS</p> 
+        </div>
+    </footer>    
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>

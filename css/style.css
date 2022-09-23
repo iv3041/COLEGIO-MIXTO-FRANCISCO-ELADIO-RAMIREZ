@@ -1,0 +1,337 @@
+/* Reset CSS */
+
+*{
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+/*CSS CBody*/
+body{
+    font-family: 'Quicksand', sans-serif;
+    margin-left:13%;
+    margin-right: 13%;;
+	padding: 0;
+	color: #666;
+	background: #f2f2f2; 
+}
+
+/*CSS Header*/
+header{
+    width: 100%;
+    background: #5800FF;
+	color: white;
+    text-align: center;
+    font-size: x-large;
+}
+
+header div {
+    margin-left: 15px;
+    align-items: center;
+}
+
+/* CSS Logotipo */
+.divLogoFer img{
+    margin: 10px;
+    width: 130px;
+    height: 130px;
+    float: left;
+}
+
+/* CSS Menú de Navegación*/
+nav{
+    padding: 10px;
+    background-color: #0096FF;
+    text-align: end;
+    margin-bottom: 25px;
+    
+}
+
+.menuMain li{
+    list-style: none;
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 5px;
+    font-weight: bold;
+    font-size: small;
+    
+}
+
+.menuMain a {
+    color: white;
+    text-decoration: none;
+}
+
+.menuMain a:hover {
+    background-color: #5800FF;
+}
+
+/* CSS del contenido*/
+
+main{
+    background-color: white;
+    padding-bottom: 5px;
+}
+
+/*CSS Imagen página de inicio*/
+
+main .imagenColfer{
+    width: 100%;
+}
+
+.colfer{
+    width: 100%;
+    height: 600px;
+    border-radius: 30px; 
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/*CSS Imagen página en Construcción*/
+
+#construccion{
+    width: 850px;
+    height: 500px; 
+    display:block;
+    text-align: center;
+}
+
+/* CSS Títulos página de inicio*/
+#familiaFer{
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Lobster Two', cursive;
+}
+
+.wellcome{
+    color: #0096FF;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 25px
+}
+
+.social{
+    color: #ffffff;
+    background-color: #0096FF;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 25px
+}
+
+.t-eventos{
+    color: #ffffff;
+    background-color: #0096FF;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 5px
+}
+
+.info{
+    color: #ffffff;
+    background-color: #0096FF;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 25px
+}
+
+/* CSS Párrafos página de inicio*/
+.inicio{
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 15px;
+ }
+
+
+/* Estilos de main-section */
+
+.b-cal{
+    border: none;
+    padding: 15px 32px;
+    margin-top: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background-color: #51B0DF;
+    box-shadow: 2px 2px 2px black;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.b-cal:hover {
+    background-color: #5800FF;
+    color: white;
+}
+
+.b-admi{
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background-color: #51B0DF;
+    box-shadow: 2px 2px 2px black;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.b-admi:hover {
+    background-color: #5800FF;
+    color: white;
+}
+
+main aside{
+    margin-right: 15px;
+    margin-left: 5px;
+}
+
+.menu-aside{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    text-align: start;
+    background-color: rgb(254, 254, 254);
+}
+
+.menu-aside ul li{
+    list-style: none;
+    
+}
+
+.informate img{
+    width: 10rem;
+    height: 10rem;
+    display: block;
+    margin: 0px auto;
+}
+
+/*Display GRID*/
+
+main .main{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr, 2fr, 1fr);
+    grid-gap: 10px;
+    grid-template-rows: 0.5fr 0.2fr;
+    grid-template-areas: 
+    "wcfer p-wcfer aside"
+    "b-cal b-admi informate";
+    justify-content: center;
+    justify-items: center;
+    padding-bottom: 2rem;
+}
+
+main .main .wcfer{
+    grid-area: wcfer;
+    width: 90%;
+    text-align: start;
+    border-radius: 5px;
+}
+
+main .main .p-wcfer{
+    grid-area: p-wcfer;
+    padding-left: 5px;
+    padding-right: 10px;
+    font-size: larger;
+}
+
+main .main .b-cal{
+    grid-area: b-cal;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+main .main .b-admi{
+    grid-area: b-admi;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+main .main aside{
+    grid-area: aside;
+}
+
+main .informate{
+    grid-area: informate;
+    align-self: center;
+    justify-self: center;
+}
+
+
+/* Estilos de section eventos */
+
+.eventos {
+    background-color: #ffffff;
+    display: block;
+    display: flex;
+    padding: 1rem;
+}
+
+.eventos div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: rgb(227, 227, 227) 1px solid;
+    border-radius: 5px; 
+    margin: 2px;
+    padding: 2px;
+}
+
+.eventos div img{
+    width: 40%;
+}
+
+.eventos div p{
+    text-align: center;
+    font-size: small;
+}
+
+/* CSS Menú de Navegación Footer*/
+
+#menufooter{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    margin-bottom: 25px;
+    text-align: center;
+    background-color: rgb(254, 254, 254);
+    
+}
+
+.menufooter li{
+    list-style: none;
+    display: inline-block;
+    padding: 3px 10px;
+    font-weight: bold;
+    font-size: small;
+    
+}
+
+.menufooter a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+/* CSS para el Footer*/
+
+.footer{
+    padding: 10px;
+    background-color: #72FFFF;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: small;
+    font-weight: bolder;
+    color: black;
+}
+
+
