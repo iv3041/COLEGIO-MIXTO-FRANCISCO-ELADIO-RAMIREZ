@@ -1,0 +1,226 @@
+//Smartphone
+@mixin calidad-s {
+    main {
+        .t-calidad {
+            h2 {
+                color: $color-btn-hover;
+                text-align: center;
+                font-size: 45px;
+                font-family: 'Lobster Two', cursive;
+                padding-bottom: 1rem;
+            }
+        }
+
+        .img-calidad {
+
+            #img-calidad {
+                width: 80%;
+                display: block;
+                justify-content: center;
+                margin: auto;
+                border-radius: 5px;
+                box-shadow: 1.5px 1.5px 2px $box-shadow;
+            }
+        }
+
+        .p-calidad {
+            margin-bottom: 0.8rem;
+
+            .p-calidad1 {
+                padding-left: 2rem;
+                padding-right: 2rem;
+                padding-top: 2rem;
+                text-align: center;
+                margin-left: 1rem;
+                margin-right: 1rem;
+                margin-top: 1rem;
+                font-weight: bolder;
+                font-size: large;
+            }
+
+            .p-calidad2 {
+                padding: 2rem;
+                text-align: center;
+                margin-left: 1rem;
+                margin-right: 1rem;
+                margin-bottom: 1rem;
+            }
+
+        }
+
+        .fila-calidad {
+
+            &::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            .sellos-calidad {
+                float: left;
+                width: 33%;
+                padding: 1px;
+                text-align: center;
+
+                #sello {
+                    width: 80%;
+                }
+
+            }
+
+        }
+
+    }
+}
+
+
+//Tablet
+@mixin calidad-t {
+    main {
+        .t-calidad {
+            h2 {
+                color: $color-btn-hover;
+                text-align: center;
+                font-size: 45px;
+                font-family: 'Lobster Two', cursive;
+                padding-bottom: 1rem;
+            }
+        }
+
+        .img-calidad {
+
+            #img-calidad {
+                width: 70%;
+                display: block;
+                justify-content: center;
+                margin: auto;
+                border-radius: 5px;
+                box-shadow: 1.5px 1.5px 1.5px 2px $box-shadow;
+            }
+        }
+
+        .p-calidad {
+            margin-bottom: 0.8rem;
+
+            .p-calidad1 {
+                padding-left: 3rem;
+                padding-right: 3rem;
+                padding-top: 2rem;
+                text-align: center;
+                margin-left: 5px;
+                margin-right: 5px;
+                margin-top: 1rem;
+                font-weight: bolder;
+                font-size: 1.5rem;
+            }
+
+            .p-calidad2 {
+                padding: 2rem;
+                text-align: center;
+                margin-left: 3rem;
+                margin-right: 3rem;
+                margin-bottom: 1rem;
+                font-size: large;
+
+            }
+
+        }
+        .fila-calidad {
+
+            &::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            .sellos-calidad {
+                float: left;
+                width: 33%;
+                padding: 1px;
+                text-align: center;
+
+                #sello {
+                    width: 40%;
+                }
+
+            }
+
+        }
+    }
+}
+
+
+
+//Desktop
+@mixin calidad-d {
+    main {
+        .t-calidad {
+            h2 {
+                color: $color-btn-hover;
+                text-align: center;
+                font-size: 45px;
+                font-family: 'Lobster Two', cursive;
+                padding-bottom: 1rem;
+            }
+        }
+
+        .img-calidad {
+
+            #img-calidad {
+                width: 60%;
+                display: block;
+                justify-content: center;
+                margin: auto;
+                border-radius: 5px;
+                box-shadow: 1.5px 1.5px 1.5px 2px $box-shadow;
+            }
+        }
+
+        .p-calidad {
+            margin-bottom: 1rem;
+
+            .p-calidad1 {
+                padding-left: 10rem;
+                padding-right: 10rem;
+                padding-top: 2rem;
+                text-align: center;
+                margin-left: 1rem;
+                margin-right: 1rem;
+                margin-top: 1rem;
+                font-weight: bolder;
+                font-size: 3rem;
+            }
+
+            .p-calidad2 {
+                padding: 2rem;
+                text-align: center;
+                margin-left: 10rem;
+                margin-right: 10rem;
+                margin-bottom: 1rem;
+                font-size: x-large;
+            }
+
+        }
+        .fila-calidad {
+
+            &::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            .sellos-calidad {
+                float: left;
+                width: 33%;
+                padding: 1px;
+                text-align: center;
+
+                #sello {
+                    width: 30%;
+                }
+
+            }
+
+        }
+    }
+}

@@ -1,0 +1,143 @@
+//Variables
+$color-body: #f2f2f2;
+$color-botones: #51B0DF;
+$color-main: rgb(88, 0, 255);
+$color-title-s: #0096FF;
+$color-btn-hover: #5800FF;
+$color-font-body: #666;
+$color-font-title: #ffffff;
+$text-shadow: #00D7FF;
+$box-shadow: #4c00db;
+
+//Nesting
+
+@import "../sass/media-queries";
+@import "../sass/bloque-menugral";
+@import "../sass/bloque-inicio";
+@import "../sass/bloque-resena";
+@import "../sass/bloque-horizonte";
+@import "../sass/bloque-calidad";
+@import "../sass/bloque-cultura";
+@import "../sass/bloque-cdi";
+@import "../sass/bloque-contacto";
+@import "../sass/bloque-footer";
+
+//Media Query Smartphone
+/*Media Query Smartphone*/
+
+@include smartphone {
+
+    /*Menú de Navegación*/
+    @include menu-general-s;
+
+    /***Página de Inicio***/
+    /*Main*/
+    @include inicio-s;
+
+    /***Página de Reseña***/
+    /*Main*/
+    @include resena-s;
+
+    /***Página de Horizonte***/
+    /*Main*/
+    @include horizonte-s;
+
+    /***Página de Calidad***/
+    /*Main*/
+    @include calidad-s;
+
+    /***Página de Cultura***/
+    /*Main*/
+    @include cultura-s;
+
+    /***Página de CDI***/
+    /*Main*/
+    @include cdi-s;
+
+    /***Página de Contacto***/
+    /*Main*/
+    @include contacto-s;
+
+    /*Footer*/
+    @include footer-s;
+}
+
+//Media Query Tablet
+/*Media Query Tablet*/
+@include tablet {
+
+     /*Menú de Navegación*/
+     @include menu-general-t;
+
+     /***Página de Inicio***/
+     /*Main*/
+     @include inicio-t;
+ 
+     /***Página de Reseña***/
+     /*Main*/
+     @include resena-t;
+ 
+     /***Página de Horizonte***/
+     /*Main*/
+     @include horizonte-t;
+ 
+     /***Página de Calidad***/
+     /*Main*/
+     @include calidad-t;
+ 
+     /***Página de Cultura***/
+     /*Main*/
+     @include cultura-t;
+ 
+     /***Página de CDI***/
+     /*Main*/
+     @include cdi-t;
+ 
+     /***Página de Contacto***/
+     /*Main*/
+     @include contacto-t;
+ 
+     /*Footer*/
+     @include footer-t;
+     
+}
+
+//Media Query Desktop
+/*Media Query Desktop*/
+@include desktop {
+
+    /*Menú de Navegación*/
+    @include menu-general-d;
+
+    /***Página de Inicio***/
+    /*Main*/
+    @include inicio-d;
+
+    /***Página de Reseña***/
+    /*Main*/
+   @include resena-d;
+
+    /***Página de Horizonte***/
+    /*Main*/
+   @include horizonte-d;
+
+    /***Página de Calidad***/
+    /*Main*/
+    @include calidad-d;
+
+    /***Página de Cultura***/
+    /*Main*/
+    @include cultura-d;
+
+    /***Página de CDI***/
+    /*Main*/
+    @include cdi-d;
+
+    /***Página de Contacto***/
+    /*Main*/
+    @include contacto-d;
+
+    /*Footer*/
+    @include footer-d;
+    
+}

@@ -1,0 +1,179 @@
+//Smartphone
+@mixin horizonte-s {
+    .page-hori {
+        .t-horiz {
+            h2 {
+                color: $color-btn-hover;
+                text-align: center;
+                font-size: 45px;
+                font-family: 'Lobster Two', cursive;
+            }
+        }
+
+        .c-mision,
+        .c-vision,
+        .c-politica,
+        .c-filosofia {
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 1px 1px 1px gray;
+            border: 1px solid rgb(236, 236, 236);
+            border-radius: 5px;
+            margin: 1rem;
+        }
+
+        h3 {
+            color: $color-font-title;
+            background-color: $color-title-s;
+            font-size: 25px;
+            text-align: center;
+            margin-top: 5px;
+            padding: 3px;
+            margin-bottom: 0.8rem;
+        }
+
+        p {
+            margin-bottom: 0.8rem;
+        }
+
+        img {
+            width: 50%;
+            display: block;
+            justify-content: center;
+            margin: auto;
+            border-radius: 5px;
+            box-shadow: 1.5px 1.5px 2px $box-shadow;
+        }
+    }
+}
+
+
+//Tablet
+@mixin horizonte-t {
+    .page-hori {
+        .t-horiz {
+            h2 {
+                color: $color-btn-hover;
+                text-align: center;
+                font-size: 45px;
+                font-family: 'Lobster Two', cursive;
+            }
+        }
+
+        .c-mision,
+        .c-politica {
+            display: flex;
+            flex-direction: row-reverse;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 1px 1px 1px gray;
+            border: 1px solid rgb(236, 236, 236);
+            border-radius: 5px;
+            font-size: medium;
+            margin: 0.5rem;
+        }
+
+        .c-vision,
+        .c-filosofia {
+            display: flex;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 1px 1px 1px gray;
+            border: 1px solid rgb(236, 236, 236);
+            border-radius: 5px;
+            font-size: medium;
+            margin: 0.5rem;
+        }
+
+        h3 {
+            color: $color-font-title;
+            background-color: $color-title-s;
+            border-radius: 5px;
+            font-size: 25px;
+            text-align: center;
+            margin-top: 1rem;
+            padding: 3px;
+            margin-bottom: 0.8rem
+        }
+
+        p {
+            margin: 1rem;
+        }
+
+        .img-mision, .img-vision, .img-politica, .img-filosofia  {
+            padding: 0.5rem;
+            img {
+                width: 300px;
+                height: 200px;
+                border-radius: 5px;
+                box-shadow: 1.5px 1.5px 4px $box-shadow;
+             }
+         }
+    }
+}
+
+
+
+//Desktop
+@mixin horizonte-d {
+    .page-hori {
+        .t-horiz {
+            h2 {
+                color: $color-btn-hover;
+                text-align: center;
+                font-size: 45px;
+                font-family: 'Lobster Two', cursive;
+            }
+        }
+
+        .c-mision,
+        .c-politica {
+            display: flex;
+            flex-direction: row-reverse;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 1px 1px 1px gray;
+            border: 1px solid rgb(236, 236, 236);
+            border-radius: 5px;
+            font-size: 2rem;
+            margin: 1rem;
+        }
+
+        .c-vision,
+        .c-filosofia {
+            display: flex;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 1px 1px 1px gray;
+            border: 1px solid rgb(236, 236, 236);
+            border-radius: 5px;
+            font-size: 2rem;
+            margin: 1rem;
+        }
+
+        h3 {
+            color: $color-font-title;
+            background-color: $color-title-s;
+            border-radius: 5px;
+            font-size: 35px;
+            text-align: center;
+            margin-top: 1rem;
+            padding: 3px;
+            margin-bottom: 0.8rem
+        }
+
+        p {
+            margin: 2rem;
+        }
+
+        .img-mision, .img-vision, .img-politica, .img-filosofia  {
+            padding: 1rem;
+            img {
+                width: 600px;
+                height: 400px;
+                border-radius: 5px;
+                box-shadow: 1.5px 1.5px 4px $box-shadow;
+             }
+         }
+    }
+}
