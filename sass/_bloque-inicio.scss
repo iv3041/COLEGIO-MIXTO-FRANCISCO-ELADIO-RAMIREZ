@@ -4,6 +4,9 @@
         padding-bottom: 5px;
 
         .imagenColfer {
+            display: inline-block;
+            text-align: center;
+
             img {
                 text-align: center;
                 margin-bottom: 25px;
@@ -230,10 +233,12 @@
     main {
         background-color: white;
         padding-bottom: 5px;
-        padding-top: 10rem;
         box-shadow: 2px 2px 5px;
 
         .imagenColfer {
+            display: inline-block;
+            text-align: center;
+
             img {
                 padding: 3px;
                 width: 98%;
@@ -469,6 +474,267 @@
 
             .p-oportunidades {
                 div {
+                    display: none;
+                }
+
+            }
+        }
+
+    }
+}
+
+
+
+//Laptop
+@mixin inicio-l {
+    main {
+        background-color: white;
+        padding-bottom: 5px;
+        box-shadow: 2px 2px 5px;
+
+        .imagenColfer {
+            display: inline-block;
+            text-align: center;
+
+            img {
+                padding: 3px;
+                width: 98%;
+                border-radius: 15px;
+                margin-top: 5px;
+            }
+        }
+
+        div {
+            #familiaFer {
+                color: $color-btn-hover;
+                text-align: center;
+                font-size: 3rem;
+                font-family: 'Lobster Two', cursive;
+            }
+
+            .wellcome {
+                color: $color-title-s;
+                font-size: 2rem;
+                text-align: center;
+                margin-top: 5px;
+                margin-bottom: 25px
+            }
+        }
+
+        .grid {
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: repeat(2, 2fr, 1fr);
+            grid-gap: 10px;
+            grid-template-rows: 0.5fr 0.2fr;
+            grid-template-areas:
+                "wcfer p-wcfer"
+                "b-cal b-admi"
+                "aside informate";
+            justify-content: center;
+            justify-items: center;
+            padding-bottom: 2rem;
+
+            .wcfer {
+                grid-area: wcfer;
+                width: 90%;
+                text-align: start;
+                border-radius: 5px;
+            }
+
+            .p-wcfer {
+                grid-area: p-wcfer;
+                padding-left: 5px;
+                padding-right: 10px;
+                font-size: x-large;
+            }
+
+            div {
+                .b-cal {
+                    grid-area: b-cal;
+                    border: none;
+                    padding: 15px 32px;
+                    margin-top: 15px;
+                    text-decoration: none;
+                    font-size: medium;
+                    background-color: $color-botones;
+                    box-shadow: 2px 2px 2px black;
+                    color: white;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    text-align: center;
+
+                    &.b-cal:hover {
+                        background-color: $color-btn-hover;
+                        color: white;
+                        -webkit-transition-duration: 0.4s;
+                        transition-duration: 0.4s;
+                    }
+                }
+
+
+                .informate {
+                    grid-area: informate;
+                    align-self: center;
+                    justify-self: center;
+                }
+            }
+
+            div {
+                .b-admi {
+                    grid-area: b-admi;
+                    border: none;
+                    padding: 15px 32px;
+                    margin-top: 15px;
+                    text-decoration: none;
+                    font-size: medium;
+                    background-color: $color-botones;
+                    box-shadow: 2px 2px 2px black;
+                    color: white;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    text-align: center;
+
+                    &.b-admi:hover {
+                        background-color: $color-btn-hover;
+                        color: white;
+                        -webkit-transition-duration: 0.4s;
+                        transition-duration: 0.4s;
+                    }
+                }
+            }
+
+            aside {
+                grid-area: aside;
+                padding: 10px;
+                text-align: start;
+                background-color: rgb(254, 254, 254);
+                margin-bottom: 2rem;
+                font-size: larger;
+                font-weight: bold;
+
+
+                div {
+                    .social {
+                        color: $color-font-title;
+                        background-color: $color-title-s;
+                        font-size: 25px;
+                        text-align: center;
+                        margin-top: 5px;
+                        margin-bottom: 25px
+                    }
+                }
+
+                div {
+                    #ytplayer {
+                        display: block;
+                        margin: 0px auto;
+                    }
+
+                    #unete {
+                        text-align: center;
+                        margin: 5px;
+                    }
+
+                    div {
+                        .info {
+                            color: $color-font-title;
+                            background-color: $color-title-s;
+                            font-size: 25px;
+                            text-align: center;
+                            margin-top: 5px;
+                            margin-bottom: 25px
+                        }
+
+                        nav {
+                            padding: 10px;
+                            text-align: start;
+                            background-color: rgb(254, 254, 254);
+                            margin-bottom: 2rem;
+                            font-size: larger;
+                            font-weight: bold;
+
+                            &.menu-aside a:hover {
+                                background-color: $color-btn-hover;
+                                padding: 3px;
+                                border-radius: 5px;
+                                color: white;
+                                -webkit-transition-duration: 0.4s;
+                                transition-duration: 0.4s;
+                            }
+
+                            ul {
+
+                                li {
+                                    list-style: none;
+                                    text-align: center;
+                                    margin: 3px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .informate {
+                grid-area: informate;
+                align-self: center;
+                justify-self: center;
+
+                img {
+                    width: 13rem;
+                    height: 13rem;
+                    display: block;
+                    margin: 0px auto;
+                }
+            }
+        }
+
+        .s-oportunidades {
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            background-color: white;
+            border-color: aliceblue;
+            box-shadow: 2px 2px 5px;
+            padding-bottom: 10px;
+
+            div {
+                .t-oportunidades {
+                    color: $color-font-title;
+                    background-color: $color-title-s;
+                    font-size: 25px;
+                    text-align: center;
+                    margin-top: 5px;
+                    padding: 3px;
+                }
+
+
+            }
+
+            .img-oportunidades {
+                width: 100%;
+                height: auto;
+                display: flex;
+
+                div {
+                    width: 100%;
+                    height: auto;
+                    padding: 1rem;
+                    justify-content: space-around;
+
+                    img {
+                        width: 100%;
+                        border-radius: 5px;
+                    }
+                }
+            }
+
+            .p-oportunidades {
+                font-size: medium;
+                text-align: center;
+                display: flex;
+
+                div {
                     width: 100%;
                     height: auto;
                     padding-top: 0.3rem;
@@ -483,7 +749,6 @@
 
     }
 }
-
 
 
 //Desktop
@@ -719,12 +984,13 @@
                     height: auto;
                     padding: 1rem;
                     justify-content: space-around;
+
                     img {
                         width: 100%;
                         border-radius: 5px;
                     }
                 }
-                
+
             }
 
             .p-oportunidades {

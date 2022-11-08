@@ -102,6 +102,46 @@ $box-shadow: #4c00db;
      
 }
 
+//Media Query Laptop
+/*Media Query Laptop*/
+@include laptop {
+
+    /*Menú de Navegación*/
+    @include menu-general-l;
+
+    /***Página de Inicio***/
+    /*Main*/
+    @include inicio-l;
+
+    /***Página de Reseña***/
+    /*Main*/
+    @include resena-l;
+
+    /***Página de Horizonte***/
+    /*Main*/
+    @include horizonte-l;
+
+    /***Página de Calidad***/
+    /*Main*/
+    @include calidad-t;
+
+    /***Página de Cultura***/
+    /*Main*/
+    @include cultura-l;
+
+    /***Página de CDI***/
+    /*Main*/
+    @include cdi-l;
+
+    /***Página de Contacto***/
+    /*Main*/
+    @include contacto-l;
+
+    /*Footer*/
+    @include footer-l;
+    
+}
+
 //Media Query Desktop
 /*Media Query Desktop*/
 @include desktop {

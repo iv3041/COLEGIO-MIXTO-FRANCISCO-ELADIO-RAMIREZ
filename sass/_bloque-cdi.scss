@@ -249,6 +249,132 @@
 }
 
 
+//Laptop
+@mixin cdi-l {
+    .page-cdi {
+        .c-cdi {
+            .t-cdi {
+                h2 {
+                    color: $color-btn-hover;
+                    text-align: center;
+                    font-size: 45px;
+                    font-family: 'Lobster Two', cursive;
+                }
+
+                h3 {
+                    color: $color-btn-hover;
+                    text-align: center;
+                    font-size: 40px;
+                    font-family: 'Lobster Two', cursive;
+                    text-shadow: 0 0 0.2em $text-shadow;
+                }
+
+                p {
+                    margin-top: 1rem;
+                }
+            }
+
+            .cdicomunitaria,
+            .cdicalidad,
+            .cdirrhh,
+            .cdiadmin,
+            .cdimatricula {
+                text-align: center;
+                margin: 0.5rem;
+            }
+
+            div {
+                #img1-cdi {
+                    width: 90%;
+                    display: block;
+                    margin-bottom: 5px;
+                    border-radius: 5px;
+                    margin: auto;
+                    margin-top: 1rem;
+                    box-shadow: 1.5px 1.5px 2px $box-shadow;
+                }
+            }
+
+            div {
+                h4 {
+                    color: $color-font-title;
+                    background-color: $color-title-s;
+                    font-size: 20px;
+                    text-align: center;
+                    padding: 2px;
+                    margin-bottom: 0.8rem;
+                    margin-left: 2rem;
+                    margin-right: 2rem;
+                }
+            }
+
+            .t-cdiobjetivos {
+                color: $color-btn-hover;
+                text-align: center;
+                font-size: 30px;
+                font-family: 'Lobster Two', cursive;
+                text-shadow: 0 0 0.2em $text-shadow;
+                margin: 1.5rem;
+            }
+
+            .p-cdi {
+                margin-top: 1rem;
+                margin-left: 6rem;
+                margin-right: 6rem;
+                text-align: center;
+                font-size: large;
+            }
+
+            p {
+                margin-bottom: 1rem;
+            }
+        }
+
+        .t-politica {
+            margin: 0.5rem;
+        }
+
+        .t-cdi p,
+        .cdicomunitaria p,
+        .cdicalidad p,
+        .cdimatricula p,
+        .cdirrhh p,
+        .cdicalidad p,
+        .cdiadmin p {
+            margin-left: 8rem;
+            margin-right: 8rem;
+            text-align: center;
+            font-size: large;
+            font-weight: bold;
+        }
+
+        .flex-politica,
+        .flex-comunitaria,
+        .flex-calidad,
+        .flex-rrhh,
+        .flex-admin,
+        .flex-matricula {
+            display: flex;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            justify-content: center;
+
+            img {
+                width: 450px;
+                height: 310px;
+                border-radius: 5px;
+                box-shadow: 1.5px 1.5px 2px $box-shadow;
+                margin: 0.5rem;
+            }
+        }
+
+
+    }
+
+}
+
+
+
 
 //Desktop
 @mixin cdi-d {
@@ -290,6 +416,8 @@
                     display: block;
                     margin-bottom: 5px;
                     border-radius: 5px;
+                    margin: auto;
+                    margin-top: 1rem;
                     box-shadow: 1.5px 1.5px 2px $box-shadow;
                 }
             }
@@ -357,14 +485,6 @@
             margin-left: 8rem;
             margin-right: 8rem;
             justify-content: center;
-        }
-
-        .flex-politica,
-        .flex-comunitaria,
-        .flex-rrhh,
-        .flex-calidad,
-        .flex-admin,
-        .flex-matricula {
             img {
                 width: 650px;
                 height: 430px;
@@ -374,25 +494,7 @@
             }
         }
 
-        img {
-            width: 70%;
-            display: block;
-            margin: auto;
-            text-align: center;
-            margin-top: 1rem;
-            border-radius: 5px;
-            box-shadow: 1.5px 1.5px 2px $box-shadow;
-        }
 
-        #img1-cdi {
-            width: 70%;
-            display: block;
-            margin-bottom: 5px;
-            border-radius: 5px;
-            margin: auto;
-            margin-top: 1rem;
-            box-shadow: 1.5px 1.5px 2px $box-shadow;
-        }
     }
 
 }
